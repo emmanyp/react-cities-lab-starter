@@ -21,6 +21,7 @@ export default function App() {
 	let images = imagesArr.map((ele, index) => {
 		return (
 			<img
+				style={{ border: bigImage === ele.img ? '5px solid green' : '' }}
 				src={ele.img}
 				alt={ele.city}
 				key={index}
